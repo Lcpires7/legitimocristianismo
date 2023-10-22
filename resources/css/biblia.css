@@ -13,11 +13,21 @@ section h1 {
     text-align: center;
 }
 
-section h2 {
+section div h2 {
     font-size: 1.7rem;
     border-bottom: 1px solid black;
+    display: inline;
+}
+section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+section div a img {
+    height: 30px;
+}
 section ul {
     display: grid;
     grid-auto-rows: 60px;
