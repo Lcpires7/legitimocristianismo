@@ -45,6 +45,7 @@ header#header div#menu-nav img{
 
 /* Main */
 main {
+    box-sizing: border-box;
     margin-top: 70px;
     margin-bottom: 70px;
 }
