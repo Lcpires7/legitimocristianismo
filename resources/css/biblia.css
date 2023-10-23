@@ -24,9 +24,23 @@ section div {
     justify-content: space-between;
 }
 
+section div a {
+    box-sizing: border-box;
+    border: 2px solid #787166;
+    border-radius: 10px;
+    background-color: #b8a381;
+    box-shadow: 0px 2px black;
+}
+
+section div a:active {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    box-shadow: 0px 0px;
+}
 
 section div a img {
-    height: 30px;
+    height: 25px;
+    padding: 2.5px;
 }
 section ul {
     display: grid;
@@ -42,7 +56,15 @@ section ul li a {
     padding-bottom: 15px;
     font-size: 1.3rem;
     background-color: #f7c56f;
-    border: 1px solid ;
-    border-radius: 8px;
+    border: 1px solid #787166;
+    border-radius: 10px;
     color: black;
+    box-shadow: 0px 4px #787166;
+}
+
+section ul li a:active {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    box-shadow:  0px 0px;
+    background-color: #b8a381;
 }
