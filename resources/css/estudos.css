@@ -1,0 +1,6 @@
+div#hero{
+    background-image: url("../img/fundo-estudos.jpeg");
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}

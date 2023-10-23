@@ -3,6 +3,13 @@ main#main {
     display: grid;
 }
 
+div#hero {
+    background-image: url("../img/fundo-biblia.jpeg");
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+
 main#main section{
    box-sizing: border-box;
    padding-left: 1rem;
