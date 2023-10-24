@@ -1,0 +1,40 @@
+main#main section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 20px;
+}
+
+main#main section h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+main#main section ul {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+main#main section ul li {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+main#main section ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    border: #787166 solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0px 2px;
+}
+
+main#main section ul li a:active {
+    box-shadow: 0px 0px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
