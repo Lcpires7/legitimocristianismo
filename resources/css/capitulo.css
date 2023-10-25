@@ -1,0 +1,37 @@
+main#main div#barra-de-informacao {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid black;
+    height: 50px;
+    background-color: white;
+}
+
+main#main section {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-rows: 60px;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 100vh;
+    overflow-x: scroll;
+}
+
+main#main section h1 {
+    font-size: 2rem;
+}
+
+div.versiculos {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 8px;
+    font-size: 1.3rem;
+}
+
+div.versiculos p span.versiculo {
+    margin-right: 8px;
+}
