@@ -1,3 +1,6 @@
+main#main{
+    margin-top: 0px;
+}
 main#main div#barra-de-informacao {
     position: fixed;
     box-sizing: border-box;
@@ -5,6 +8,7 @@ main#main div#barra-de-informacao {
     border: 2px solid black;
     height: 50px;
     background-color: white;
+    top: 70px;
 }
 
 main#main section {
@@ -12,13 +16,13 @@ main#main section {
     padding-left: 1rem;
     padding-right: 1rem;
     display: grid;
-    grid-template-rows: 60px;
+    grid-template-rows: 80px;
     grid-auto-rows: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     height: 100vh;
     overflow-x: scroll;
+    padding-top: 120px;
 }
 
 main#main section h1 {
