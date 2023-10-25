@@ -2,6 +2,10 @@ main#main{
     margin-top: 0px;
 }
 main#main div#barra-de-informacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
     position: fixed;
     box-sizing: border-box;
     width: 100%;
@@ -9,20 +13,39 @@ main#main div#barra-de-informacao {
     height: 50px;
     background-color: white;
     top: 70px;
+    z-index: 100;
+}
+
+main#main div#barra-de-informacao a {
+    border: 1px solid black;
+    height: 30px;
+    width: auto;
+    margin: auto;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 main#main section {
+    height: auto;
     box-sizing: border-box;
     padding-left: 1rem;
     padding-right: 1rem;
-    display: grid;
     grid-template-rows: 80px;
     grid-auto-rows: auto;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow-x: scroll;
+    height: auto;
     padding-top: 120px;
+    display: none;
+    padding-bottom: 70px;
+}
+
+main#main section.active {
+    display: grid;
 }
 
 main#main section h1 {
