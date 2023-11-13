@@ -1,0 +1,3 @@
+#capitulo1 > div > p:active{
+    background-color: #ffff00 !important;
+}

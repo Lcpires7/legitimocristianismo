@@ -29,6 +29,64 @@ main#main div#barra-de-informacao a {
     padding-right: 8px;
 }
 
+ #lista-sumario {
+    background-color: white;
+    grid-template-rows: 60px auto;
+    height: 100vh;
+    overflow-x: scroll;
+    z-index: 10000000000;
+    position: fixed;
+    top: 0;
+    transition: left 1s;
+    left: -100%;
+    width: 100%;
+    transition: left 0.7s;
+}
+
+#lista-sumario > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lista-sumario > div > span {
+    padding-left: 8px;
+}
+
+#lista-sumario > div > span, #lista-sumario > div > a {
+    font-size: 2rem;
+    color: black;
+}
+
+#lista-sumario > div > a {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 40px;
+    background-color: rgb(127, 44, 44);
+}
+
+
+#lista-sumario > ul > li a {
+    text-decoration: none;
+    color: black !important;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px 8px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    border-bottom: 2px solid black;
+}
+
+.active {
+    left: 0 !important;
+}  
+
 main#main section {
     height: auto;
     box-sizing: border-box;
@@ -53,6 +111,34 @@ main#main section h1 {
     font-size: 2rem;
 }
 
+.menu-verse {
+    width: 100%;
+    border: 1px solid black;
+    max-height: 100px;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-auto-rows: 30px;
+    bottom: 70px;
+    background-color: white;
+    z-index: 1000;
+    display: none;
+}
+
+.menu-verse .form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px;
+}
+
+.menu-verse ul {
+    display: none;
+}
+
+.menu-verse ul li {
+    border-bottom: 1px solid black;
+}
+
 div.versiculos {
     display: grid;
     grid-auto-rows: auto;
@@ -62,4 +148,32 @@ div.versiculos {
 
 div.versiculos p span.versiculo {
     margin-right: 8px;
+}
+
+/*Class para o Versiculo Selecionado */
+.selected {
+    background-color: gray !important;
+}
+
+/* Cor dos marcadores de texto */
+
+.yellow{
+    background-color: #ffff00;
+
+}
+
+.orange{
+    background-color: #ffa500;
+}
+
+.purple{
+    background-color: #F73FF7;
+}
+
+.blue{
+    background-color: #2eb2ff;
+}
+
+.green{
+    background-color: #00B000;
 }
