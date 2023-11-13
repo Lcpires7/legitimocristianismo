@@ -1,0 +1,74 @@
+html {
+    font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 70px auto 100px;
+    grid-template-columns: 100%;
+}
+
+/* Cabeçário */
+header#header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: auto 50px 50px;
+    column-gap: 10px;
+    background-color: #0E84FA;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+
+header#header > h1{
+    font-size: 2.5rem;
+}
+
+header#header div#login div{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 50%;
+}
+
+header#header div#menu-nav img{
+    width: 50px;
+    height: 50px;
+}
+/* Fim do cabeçário*/
+
+/* Main */
+main {
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+/* Fim od main */
+
+div#barra-de-menu {
+    width: 100%;
+    background-color: #7F91A2;
+    border-top: solid black 2px;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+
+div#barra-de-menu a img {
+    height: 50px;
+}
+/* Fim od main */
